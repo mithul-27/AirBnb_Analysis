@@ -1,4 +1,5 @@
 streamlit_option_menu
+streamlit_folium
 plotly.express
 pandas
 folium
