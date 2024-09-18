@@ -10,7 +10,7 @@ Hotel_df = pd.read_csv('Hotels_data.csv')
 
 icon='https://avatars.githubusercontent.com/u/698437?s=280&v=4'
 st.set_page_config(page_title='AIRBNB ',page_icon=icon,initial_sidebar_state='expanded',
-                        layout='wide',menu_items={"about":'This streamlit application was developed by M.Gokul'})
+                        layout='wide')
 
 title_text = '''<h1 style='font-size: 36px;color:#ff5a5f;text-align: center;'>AIRBNB</h1><h2 style='font-size: 24px;color:#008891;text-align: center;'>Explore Your Dream Stays</h2>'''
 st.markdown(title_text, unsafe_allow_html=True)
