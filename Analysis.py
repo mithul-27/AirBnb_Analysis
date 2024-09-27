@@ -254,7 +254,7 @@ if selected == 'INSIGHTS':
 
     elif question == "What is the Range of the number of guests included?":
         x = Hotel_df['guests_included'].value_counts().sort_index().reset_index()
-        fig = px.bar(x, x='index', y='guests_included', color='guests_included')
+        fig = px.bar(x, x = x.index, y=x.values, color=x.values)
         fig.update_layout(title="Distribution of the Number of Guests Included", xaxis_title="No. of Guests", yaxis_title="Count", height=700, width=1000)
 
     elif question == "What is the relationship between review scores and price?":
@@ -263,7 +263,7 @@ if selected == 'INSIGHTS':
 
     elif question == "What is the most common property type?":
         property_type_counts = Hotel_df['property_type'].value_counts().reset_index()
-        fig = px.bar(property_type_counts, x='index', y='property_type', color='property_type')
+        fig = px.bar(property_type_counts, x=property_type_counts.index, y=property_type_counts.values, color=property_type_counts.values)
         fig.update_layout(title="Most Common Property Type", xaxis_title="Property Type", yaxis_title="Frequency", height=700, width=1000)
 
     elif question == "What is the average price per night for each bed type?":
@@ -278,7 +278,7 @@ if selected == 'INSIGHTS':
 
     elif question == "What is the distribution of listings across different countries?":
         country_counts = Hotel_df['country'].value_counts().reset_index()
-        fig = px.bar(country_counts, x='index', y='country')
+        fig = px.bar(country_counts, x=country_counts.index, y=country_counts.values, color=country_counts.values)
         fig.update_layout(title="Distribution of Listings Across Different Countries", xaxis_title="Country", yaxis_title="Frequency", height=700, width=1000)
 
     st.plotly_chart(fig)
