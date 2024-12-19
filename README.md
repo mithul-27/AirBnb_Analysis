@@ -1,6 +1,7 @@
 # AirBnb Analysis
 
-Visit: https://airbnbanalysis-f92mnf4dmk2m22po9zn7mo.streamlit.app/
+Visit: https://airbnbanalysis-f92mnf4dmk2m22po9zn7mo.streamlit.app/  
+Please press "Yes, get this app back up" and wait for less than a minute in case the site is inactive.  
 
 ## Skills take away From This Project 
 - Python scripting
